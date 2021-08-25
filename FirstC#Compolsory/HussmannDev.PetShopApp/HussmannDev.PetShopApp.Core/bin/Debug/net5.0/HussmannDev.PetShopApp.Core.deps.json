@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "HussmannDev.PetShopApp.Core/1.0.0": {
+        "runtime": {
+          "HussmannDev.PetShopApp.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HussmannDev.PetShopApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

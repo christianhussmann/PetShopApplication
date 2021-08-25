@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HussmannDev.PetShopApp.Core\HussmannDev.PetShopApp.Core.csproj" />
+      <ProjectReference Include="..\HussmannDev.PetShopApp.Domain\HussmannDev.PetShopApp.Domain.csproj" />
+      <ProjectReference Include="..\HussmannDev.PetShopApp.infrastructutre.DataAccess\HussmannDev.PetShopApp.infrastructutre.DataAccess.csproj" />
+    </ItemGroup>
+
+</Project>

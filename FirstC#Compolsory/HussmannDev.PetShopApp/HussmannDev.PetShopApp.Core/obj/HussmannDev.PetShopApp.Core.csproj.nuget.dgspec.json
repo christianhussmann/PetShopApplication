@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#_CrashCourse\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj": {}
+    "C:\\C#_CrashCourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\C#_CrashCourse\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj": {
+    "C:\\C#_CrashCourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#_CrashCourse\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj",
+        "projectUniqueName": "C:\\C#_CrashCourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj",
         "projectName": "HussmannDev.PetShopApp.Core",
-        "projectPath": "C:\\C#_CrashCourse\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj",
+        "projectPath": "C:\\C#_CrashCourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj",
         "packagesPath": "C:\\Users\\chri9\\.nuget\\packages\\",
-        "outputPath": "C:\\C#_CrashCourse\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\obj\\",
+        "outputPath": "C:\\C#_CrashCourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\chri9\\AppData\\Roaming\\NuGet\\NuGet.Config",
