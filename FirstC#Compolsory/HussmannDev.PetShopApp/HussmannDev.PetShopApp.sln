@@ -8,11 +8,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{DAC841AA-1B31-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HussmannDev.PetShopApp.UI", "HussmannDev.PetShopApp.UI\HussmannDev.PetShopApp.UI.csproj", "{A43132BC-D72E-4890-B54D-AA80DFEBDAAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HussmannDev.PetShopApp.infrastructutre.DataAccess", "HussmannDev.PetShopApp.infrastructutre.DataAccess\HussmannDev.PetShopApp.infrastructutre.DataAccess.csproj", "{B73B5BED-309F-4A44-ACA3-4FD91A8B65BF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HussmannDev.PetShopApp.Domain", "HussmannDev.PetShopApp.Domain\HussmannDev.PetShopApp.Domain.csproj", "{82F6C526-7D58-4EE0-98D4-33D7B934DED7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HussmannDev.PetShopApp.Core", "HussmannDev.PetShopApp.Core\HussmannDev.PetShopApp.Core.csproj", "{30CD5427-90E9-491F-8C0E-2586E8C52130}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HussmannDev.PetShopApp.infrastructure.DataAccess", "HussmannDev.PetShopApp.infrastructure.DataAccess\HussmannDev.PetShopApp.infrastructure.DataAccess.csproj", "{D09A6A2F-37B4-4AFE-A48F-ED92181B2EDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +24,6 @@ Global
 		{A43132BC-D72E-4890-B54D-AA80DFEBDAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A43132BC-D72E-4890-B54D-AA80DFEBDAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A43132BC-D72E-4890-B54D-AA80DFEBDAAB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B73B5BED-309F-4A44-ACA3-4FD91A8B65BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B73B5BED-309F-4A44-ACA3-4FD91A8B65BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B73B5BED-309F-4A44-ACA3-4FD91A8B65BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B73B5BED-309F-4A44-ACA3-4FD91A8B65BF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{82F6C526-7D58-4EE0-98D4-33D7B934DED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{82F6C526-7D58-4EE0-98D4-33D7B934DED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82F6C526-7D58-4EE0-98D4-33D7B934DED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,11 +32,15 @@ Global
 		{30CD5427-90E9-491F-8C0E-2586E8C52130}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30CD5427-90E9-491F-8C0E-2586E8C52130}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30CD5427-90E9-491F-8C0E-2586E8C52130}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D09A6A2F-37B4-4AFE-A48F-ED92181B2EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D09A6A2F-37B4-4AFE-A48F-ED92181B2EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D09A6A2F-37B4-4AFE-A48F-ED92181B2EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D09A6A2F-37B4-4AFE-A48F-ED92181B2EDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A43132BC-D72E-4890-B54D-AA80DFEBDAAB} = {DAC841AA-1B31-406F-95C4-6611BE4B39F1}
-		{B73B5BED-309F-4A44-ACA3-4FD91A8B65BF} = {7DBCCDD8-7903-41CC-8067-C98651D8186A}
 		{82F6C526-7D58-4EE0-98D4-33D7B934DED7} = {FBB0E57C-526F-408F-BEEC-795063229CC9}
 		{30CD5427-90E9-491F-8C0E-2586E8C52130} = {FBB0E57C-526F-408F-BEEC-795063229CC9}
+		{D09A6A2F-37B4-4AFE-A48F-ED92181B2EDD} = {7DBCCDD8-7903-41CC-8067-C98651D8186A}
 	EndGlobalSection
 EndGlobal

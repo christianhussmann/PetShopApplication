@@ -14,7 +14,7 @@ namespace HussmannDev.PetShopApp.Core.Models
         */
         public int Id { get; set; }
         public  string Name { get; set; }
-        public  PetTypes Type { get; set; }
+        public  string Type { get; set; }
         
         public  DateTime BirthDate { get; set; }
         

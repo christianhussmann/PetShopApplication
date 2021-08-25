@@ -21,3 +21,11 @@ C:\C#_CrashCourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\Hu
 C:\C#_CrashCourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\ref\HussmannDev.PetShopApp.UI.dll
 C:\C#_CrashCourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.pdb
 C:\C#_CrashCourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.genruntimeconfig.cache
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.csproj.AssemblyReference.cache
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.AssemblyInfoInputs.cache
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.AssemblyInfo.cs
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.csproj.CoreCompileInputs.cache
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.dll
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\ref\HussmannDev.PetShopApp.UI.dll
+C:\School Stuff\C#Crashcourse\PetShopApplication\FirstC#Compolsory\HussmannDev.PetShopApp\HussmannDev.PetShopApp.UI\obj\Debug\net5.0\HussmannDev.PetShopApp.UI.pdb

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using HussmannDev.PetShopApp.Core.Models;
 using HussmannDev.PetShopApp.Domain.IRepositories;
 
-namespace HussmannDev.PetShopApp.infrastructutre.DataAccess.Repositories
+namespace HussmannDev.PetShopApp.infrastructure.DataAccess.Repositories
 {
     public class PetRepositoryInMemory : IPetRepository
     {
