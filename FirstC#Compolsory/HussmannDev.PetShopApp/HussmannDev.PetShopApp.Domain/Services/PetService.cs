@@ -20,9 +20,9 @@ namespace HussmannDev.PetShopApp.Domain.Services
             throw new System.NotImplementedException();
         }
 
-        public bool CreatePet(Pet pet)
+        public void CreatePet(Pet pet)
         {
-            return _repo.CreatePet(pet);
+            _repo.CreatePet(pet);
         }
 
         public int RemovePet(int id)
@@ -30,9 +30,9 @@ namespace HussmannDev.PetShopApp.Domain.Services
             return _repo.RemovePet(id);
         }
 
-        public Pet UpdatePet(Pet pet)
+        public void UpdatePet(Pet pet)
         {
-            return _repo.UpdatePet(pet);
+            _repo.UpdatePet(pet);
         }
 
         public int ReadPetById(int id)
