@@ -8,7 +8,6 @@ namespace HussmannDev.PetShopApp.UI
     {
         private IPetService _service;
         
-
         public Menu(IPetService service)
         {
             _service = service;
@@ -24,10 +23,64 @@ namespace HussmannDev.PetShopApp.UI
         private void StartLoop()
         {
             int choice;
-            
+            while ((choice = GetMainMenuSelection()) != 0)
+            {
+                if (choice == 1)
+                {
+                    CreatePet();
+                }
+            }
             
         }
-        
+
+        private double getPetPrice()
+        {
+            while (true)
+            {
+                var priceString = Console.ReadLine();
+                double price;
+                if (double.TryParse(priceString, out price))
+                {
+                    return price;
+                }
+                Console.WriteLine("You must enter a number!");
+            }
+        }
+
+        private void CreatePet()
+        {
+            PrintNewLine();
+            Print(StringConstants.CreatePetGreeting);
+            Print(StringConstants.PetName);
+            var petName = Console.ReadLine();
+            Print(StringConstants.PetType);
+            var petType = Console.ReadLine();
+            Print(StringConstants.PetColor);
+            var petColor = Console.ReadLine();
+            Print(StringConstants.PetPrice);
+            var petPrice = getPetPrice();
+            Print(StringConstants.PetBirthDate);
+            var petBirthDate = DateTime.Now;
+            Print(StringConstants.PetSoldDate);
+            var petSoldDate = DateTime.Now;
+            
+            
+            
+            
+            var pet = new Pet
+            {
+                Name = petName,
+                Type = petType,
+                Color = petColor,
+                Price = petPrice,
+                BirthDate = petBirthDate,
+                SoldDate = petSoldDate
+            };
+            pet = _service.CreatePet(pet);
+            Print($"Pet with following properties created - Id: {pet.Id} Name: {pet.Name} Type: {pet.Type} Color: {pet.Color} Price:{pet.Price} Birth Date: {pet.BirthDate} Sold Date:{pet.SoldDate}");
+            PrintNewLine();
+        }
+
         private void ShowWelcomeGreeting()
         {
             Console.WriteLine(StringConstants.WelcomeGreeting);
@@ -48,5 +101,49 @@ namespace HussmannDev.PetShopApp.UI
         {
             Console.WriteLine(value);
         }
+
+
+        private int GetMainMenuSelection()
+        {
+            ShowMainMenu();
+            PrintNewLine();
+            var selectionString = Console.ReadLine();
+            int selection;
+            if (int.TryParse(selectionString, out selection))
+            {
+                return selection;
+            }
+
+            return -1;
+        }
+        
+        
+
+        private void DeletePet(int id)
+        {
+            var pet = _service.RemovePet(id);
+            Console.WriteLine($"{pet.Name} has been deleted");
+        }
+
+        private void PleaseTryAgain()
+        {
+            Print(StringConstants.PleaseSelectCorrectItem);
+        }
+        
+        private void ShowMainMenu()
+        {
+            PrintNewLine();
+            Print(StringConstants.PleaseSelectOneOfTheItemsBelow);
+            Print(StringConstants.CreateNewPet);
+            Print(StringConstants.ShowAllPetsMenuText);
+            Print(StringConstants.ExitMainMenuText);
+        }
+
+        private void PrintNewLine()
+        {
+            Console.WriteLine("");
+        }
+        
     }
+    
 }

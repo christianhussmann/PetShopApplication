@@ -14,8 +14,12 @@ namespace HussmannDev.PetShopApp.UI
         public const string WhatToSearchFor = "Please Decide what to search for (1 - Id, 2 - Title, 0 - To Go Back)";
         public const string ExitMainMenuText = "Select 0 to Exit";
         public const string PleaseSelectCorrectItem = "Please Select a Number Between 0 and 5";
-        public const string CreateVideoGreeting = "Create Video";
-        public const string VideoStoryLine = "Type Video StoryLine (with more then 2 char and less then 240)";
-        public const string VideoName = "Type Video Name (with more then 2 char and less then 40)";
+        public const string CreatePetGreeting = "Create Pet";
+        public const string PetName = "Type Pet Name (with more then 2 char and less then 40)";
+        public const string PetType = "Type the type of the pet.";
+        public const string PetColor = "Type the color of the pet.";
+        public const string PetPrice = "Type the price of the pet.";
+        public const string PetBirthDate = "Type the birthdate  of the pet.";
+        public const string PetSoldDate = "Type the day the pet has been sold";
     }
 }
