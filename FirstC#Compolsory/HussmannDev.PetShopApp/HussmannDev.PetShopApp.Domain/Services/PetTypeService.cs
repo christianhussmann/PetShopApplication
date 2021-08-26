@@ -18,12 +18,12 @@ namespace HussmannDev.PetShopApp.Domain.Services
             throw new System.NotImplementedException();
         }
 
-        public bool CreatePetType(PetTypes petTypes)
+        public PetTypes CreatePetType(PetTypes petTypes)
         {
             return _repo2.CreatePetType(petTypes);
         }
 
-        public bool RemovePetType(PetTypes petTypes)
+        public PetTypes RemovePetType(int petTypes)
         {
             return _repo2.RemovePetType(petTypes);
         }
@@ -34,7 +34,7 @@ namespace HussmannDev.PetShopApp.Domain.Services
         }
         
 
-        public IEnumerable<PetTypes> ReadAllPetTypes()
+        public List<PetTypes> ReadAllPetTypes()
         {
             return _repo2.ReadAllPetTypes();
         }

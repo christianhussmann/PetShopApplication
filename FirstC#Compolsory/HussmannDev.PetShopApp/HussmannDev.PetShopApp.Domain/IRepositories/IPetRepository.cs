@@ -7,12 +7,12 @@ namespace HussmannDev.PetShopApp.Domain.IRepositories
     {
         Pet GetPet(Pet pet);
         //Create Pet
-        bool CreatePet(Pet pet);
-        IEnumerable<Pet> ReadAllPets();
+        Pet CreatePet(Pet pet);
+        List<Pet> ReadAllPets();
         //Read Pet
-        int ReadPetById(int id);
+        Pet ReadPetById(int id);
         //Delete Pet
-        int RemovePet(int id);
+        Pet RemovePet(int id);
         //Edit Pet
         Pet UpdatePet(Pet pet);
 

@@ -20,27 +20,27 @@ namespace HussmannDev.PetShopApp.Domain.Services
             throw new System.NotImplementedException();
         }
 
-        public void CreatePet(Pet pet)
+        public Pet CreatePet(Pet pet)
         {
-            _repo.CreatePet(pet);
+            return _repo.CreatePet(pet);
         }
 
-        public int RemovePet(int id)
+        public Pet RemovePet(int id)
         {
             return _repo.RemovePet(id);
         }
 
-        public void UpdatePet(Pet pet)
+        public Pet UpdatePet(Pet pet)
         {
-            _repo.UpdatePet(pet);
+            return _repo.UpdatePet(pet);
         }
 
-        public int ReadPetById(int id)
+        public Pet ReadPetById(int id)
         {
             return _repo.ReadPetById(id);
         }
 
-        public IEnumerable<Pet> ReadAllPets()
+        public List<Pet> ReadAllPets()
         {
             return _repo.ReadAllPets();
         }

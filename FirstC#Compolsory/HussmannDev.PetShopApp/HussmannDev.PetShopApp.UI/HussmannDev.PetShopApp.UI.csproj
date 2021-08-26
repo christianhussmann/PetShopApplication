@@ -10,7 +10,6 @@
       <ProjectReference Include="..\HussmannDev.PetShopApp.Core\HussmannDev.PetShopApp.Core.csproj" />
       <ProjectReference Include="..\HussmannDev.PetShopApp.Domain\HussmannDev.PetShopApp.Domain.csproj" />
       <ProjectReference Include="..\HussmannDev.PetShopApp.infrastructure.DataAccess\HussmannDev.PetShopApp.infrastructure.DataAccess.csproj" />
-      <ProjectReference Include="..\HussmannDev.PetShopApp.infrastructutre.DataAccess\HussmannDev.PetShopApp.infrastructutre.DataAccess.csproj" />
     </ItemGroup>
 
 </Project>

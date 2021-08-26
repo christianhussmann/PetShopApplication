@@ -7,13 +7,13 @@ namespace HussmannDev.PetShopApp.Core.IServices
     {
         PetTypes GetPetType(string name);
 
-        bool CreatePetType(PetTypes pet);
+        PetTypes CreatePetType(PetTypes petTypes);
 
-        bool RemovePetType(PetTypes pet);
+        PetTypes RemovePetType(int typeId);
 
         PetTypes UpdatePetType(PetTypes petTypes);
         
         
-        IEnumerable<PetTypes> ReadAllPetTypes();
+        List<PetTypes> ReadAllPetTypes();
     }
 }

@@ -7,15 +7,15 @@ namespace HussmannDev.PetShopApp.Core.IServices
     public interface IPetService
     {
         Pet GetPet(Pet pet);
-        void CreatePet(Pet pet);
+        Pet CreatePet(Pet pet);
 
-        int RemovePet(int id);
+        Pet RemovePet(int id);
 
-        void UpdatePet(Pet pet);
+        Pet UpdatePet(Pet pet);
 
-        int ReadPetById(int id);
+        Pet ReadPetById(int id);
         
         
-        IEnumerable<Pet> ReadAllPets();
+        List<Pet> ReadAllPets();
     }
 }
