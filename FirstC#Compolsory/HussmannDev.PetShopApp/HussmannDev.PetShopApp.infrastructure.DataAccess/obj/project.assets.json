@@ -11,6 +11,19 @@
         "runtime": {
           "bin/placeholder/HussmannDev.PetShopApp.Core.dll": {}
         }
+      },
+      "HussmannDev.PetShopApp.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "HussmannDev.PetShopApp.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HussmannDev.PetShopApp.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HussmannDev.PetShopApp.Domain.dll": {}
+        }
       }
     }
   },
@@ -19,11 +32,17 @@
       "type": "project",
       "path": "../HussmannDev.PetShopApp.Core/HussmannDev.PetShopApp.Core.csproj",
       "msbuildProject": "../HussmannDev.PetShopApp.Core/HussmannDev.PetShopApp.Core.csproj"
+    },
+    "HussmannDev.PetShopApp.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HussmannDev.PetShopApp.Domain/HussmannDev.PetShopApp.Domain.csproj",
+      "msbuildProject": "../HussmannDev.PetShopApp.Domain/HussmannDev.PetShopApp.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "HussmannDev.PetShopApp.Core >= 1.0.0"
+      "HussmannDev.PetShopApp.Core >= 1.0.0",
+      "HussmannDev.PetShopApp.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -34,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Domain\\HussmannDev.PetShopApp.Domain.csproj",
-      "projectName": "HussmannDev.PetShopApp.Domain",
-      "projectPath": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Domain\\HussmannDev.PetShopApp.Domain.csproj",
+      "projectUniqueName": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.infrastructure.DataAccess\\HussmannDev.PetShopApp.infrastructure.DataAccess.csproj",
+      "projectName": "HussmannDev.PetShopApp.infrastructure.DataAccess",
+      "projectPath": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.infrastructure.DataAccess\\HussmannDev.PetShopApp.infrastructure.DataAccess.csproj",
       "packagesPath": "C:\\Users\\bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Domain\\obj\\",
+      "outputPath": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.infrastructure.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -62,6 +81,9 @@
           "projectReferences": {
             "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj": {
               "projectPath": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Core\\HussmannDev.PetShopApp.Core.csproj"
+            },
+            "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Domain\\HussmannDev.PetShopApp.Domain.csproj": {
+              "projectPath": "C:\\School Stuff\\C#Crashcourse\\PetShopApplication\\FirstC#Compolsory\\HussmannDev.PetShopApp\\HussmannDev.PetShopApp.Domain\\HussmannDev.PetShopApp.Domain.csproj"
             }
           }
         }

@@ -1,7 +1,7 @@
 using HussmannDev.PetShopApp.Core.IServices;
 using HussmannDev.PetShopApp.Domain.IRepositories;
 using HussmannDev.PetShopApp.Domain.Services;
-using HussmannDev.PetShopApp.infrastructutre.DataAccess.Repositories;
+using HussmannDev.PetShopApp.infrastructure.DataAccess.Repositories;
 
 namespace HussmannDev.PetShopApp.UI
 {

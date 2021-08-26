@@ -11,7 +11,7 @@ namespace HussmannDev.PetShopApp.Core.IServices
 
         bool RemovePetType(PetTypes pet);
 
-        Pet UpdatePetType(PetTypes oldPetType, PetTypes NewPetType);
+        PetTypes UpdatePetType(PetTypes petTypes);
         
         
         IEnumerable<PetTypes> ReadAllPetTypes();

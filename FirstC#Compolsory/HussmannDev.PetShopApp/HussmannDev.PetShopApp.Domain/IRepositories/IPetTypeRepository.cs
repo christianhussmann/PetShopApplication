@@ -7,12 +7,11 @@ namespace HussmannDev.PetShopApp.Domain.IRepositories
     {
         PetTypes GetPetType(string name);
 
-        bool CreatePetType(PetTypes pet);
+        bool CreatePetType(PetTypes petTypes);
 
-        bool RemovePetType(PetTypes pet);
+        bool RemovePetType(PetTypes petTypes);
 
-        Pet UpdatePetType(PetTypes oldPetType, PetTypes NewPetType);
-        
+        PetTypes UpdatePetType(PetTypes petTypes);
         
         IEnumerable<PetTypes> ReadAllPetTypes();
     }
