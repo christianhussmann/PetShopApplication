@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HussmannDev.PetShopApp.Core\HussmannDev.PetShopApp.Core.csproj" />
+      <ProjectReference Include="..\HussmannDev.PetShopApp.Domain\HussmannDev.PetShopApp.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
