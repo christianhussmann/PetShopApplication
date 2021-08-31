@@ -83,17 +83,7 @@ namespace HussmannDev.PetShopApp.SQL.Repositories
 
         public List<PetTypes> ReadAllPetTypes()
         {
-            throw new System.NotImplementedException();
-        }
-
-        public List<PetTypes> GetAll()
-        {
             return _petsTypeTable;
-        }
-
-        PetTypes IPetTypeRepository.ReadById(int petEntityTypeId)
-        {
-            throw new System.NotImplementedException();
         }
     }
 }

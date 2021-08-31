@@ -11,7 +11,7 @@ namespace HussmannDev.PetShopApp.SQL.Repositories
     public class PetRepository : IPetRepository
     {
         private static List<PetEntity> _petsTable = new List<PetEntity>();
-        private List<PetTypes> _petTypes = new PetTypeRepository().GetAll();
+        private List<PetTypes> _petTypes = new PetTypeRepository().ReadAllPetTypes();
         private static int _id = 1;
         private readonly PetConverter _petConverter;
 
