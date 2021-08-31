@@ -7,36 +7,29 @@ namespace HussmannDev.PetShopApp.Domain.Services
 {
     public class PetTypeService : IPetTypeService
     {
-        private IPetTypeRepository _repo2;
-
-        public PetTypeService(IPetTypeRepository repo2)
-        {
-            _repo2 = repo2;
-        }
-        public PetTypes GetPetType(string name)
+        public PetTypes CreatePetType(PetTypes pet)
         {
             throw new System.NotImplementedException();
         }
 
-        public PetTypes CreatePetType(PetTypes petTypes)
+        public PetTypes RemovePetType(int id)
         {
-            return _repo2.CreatePetType(petTypes);
+            throw new System.NotImplementedException();
         }
 
-        public PetTypes RemovePetType(int petTypes)
+        public PetTypes ReadById(int id)
         {
-            return _repo2.RemovePetType(petTypes);
+            throw new System.NotImplementedException();
         }
 
-        public PetTypes UpdatePetType(PetTypes petTypes)
+        public PetTypes UpdatePetType(PetTypes pet)
         {
-            return _repo2.UpdatePetType(petTypes);
+            throw new System.NotImplementedException();
         }
-        
 
-        public List<PetTypes> ReadAllPetTypes()
+        public List<Pet> ReadAllPetTypes()
         {
-            return _repo2.ReadAllPetTypes();
+            throw new System.NotImplementedException();
         }
     }
 }

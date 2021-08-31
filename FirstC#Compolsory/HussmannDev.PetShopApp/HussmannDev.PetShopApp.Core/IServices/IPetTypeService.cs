@@ -5,15 +5,14 @@ namespace HussmannDev.PetShopApp.Core.IServices
 {
     public interface IPetTypeService
     {
-        PetTypes GetPetType(string name);
+        PetTypes CreatePetType(PetTypes pet);
 
-        PetTypes CreatePetType(PetTypes petTypes);
-
-        PetTypes RemovePetType(int typeId);
-
-        PetTypes UpdatePetType(PetTypes petTypes);
+        PetTypes RemovePetType(int id);
         
+        PetTypes ReadById(int id);
+
+        PetTypes UpdatePetType(PetTypes pet);
         
-        List<PetTypes> ReadAllPetTypes();
+        List<Pet> ReadAllPetTypes();
     }
 }

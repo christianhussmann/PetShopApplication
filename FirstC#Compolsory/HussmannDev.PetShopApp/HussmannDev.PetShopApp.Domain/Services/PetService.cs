@@ -7,42 +7,36 @@ namespace HussmannDev.PetShopApp.Domain.Services
 {
     public class PetService : IPetService
     {
-        private IPetRepository _repo;
+        private IPetRepository _petRepository;
 
-        public PetService(IPetRepository repo)
+        public PetService(IPetRepository petRepository)
         {
-            _repo = repo;
-        }
-
-
-        public Pet GetPet(Pet pet)
-        {
-            throw new System.NotImplementedException();
+            _petRepository= petRepository;
         }
 
         public Pet CreatePet(Pet pet)
         {
-            return _repo.CreatePet(pet);
+            return _petRepository.CreatePet(pet);
         }
 
         public Pet RemovePet(int id)
         {
-            return _repo.RemovePet(id);
+            return _petRepository.RemovePet(id);
         }
 
         public Pet UpdatePet(Pet pet)
         {
-            return _repo.UpdatePet(pet);
+            return _petRepository.UpdatePet(pet);
         }
 
         public Pet ReadPetById(int id)
         {
-            return _repo.ReadPetById(id);
+            return _petRepository.ReadPetById(id);
         }
 
         public List<Pet> ReadAllPets()
         {
-            return _repo.ReadAllPets();
+            return _petRepository.ReadAllPets();
         }
     }
 }
