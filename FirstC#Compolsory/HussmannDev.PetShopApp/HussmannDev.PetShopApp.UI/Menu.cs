@@ -32,42 +32,42 @@ namespace HussmannDev.PetShopApp.UI
             {
                 switch (choice)
                 {
-                    //Show
+                    //Show pets
                     case 1:
                         ReadAllPets();
                         ShowMainMenu();
                         break;
-                    //Search
+                    //Search pets
                     case 2:
                         SearchByType();
                         ShowMainMenu();
                         break;
-                    //Create
+                    //Create pets
                     case 3:
                         CreatePet();
                         ShowMainMenu();
                         break;
-                    //Delete
+                    //Delete pets
                     case 4:
                         DeletePet();
                         ShowMainMenu();
                         break;
-                    //Update
+                    //Update pets
                     case 5:
                         UpdatePet();
                         break;
-                    //ShowByPrice
+                    //ShowByPrice pets
                     case 6:
                         SortByPrice();
                         break;
-                    //ShowCheapest
+                    //ShowCheapest pet
                     case 7:
                         ShowCheapestPet();
                         break;
-                    //Exit
+                    //Exit petshop
                     case 0:
                         break;
-                    //Error
+                    //Error message
                     case -1:
                         Print(StringConstants.ErrorMessage);
                         break;
@@ -209,11 +209,6 @@ namespace HussmannDev.PetShopApp.UI
                     Print($"{pet.Name} - {pet.Color} - {pet.Price} - {pet.BirthDate}");
                 }
             }
-        }
-
-        private void PleaseTryAgain()
-        {
-            Print(StringConstants.PleaseSelectCorrectItem);
         }
 
         private void ShowMainMenu()
