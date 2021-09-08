@@ -20,7 +20,7 @@ namespace HussmannDev.PetShopApp.SQL.Repositories
            _petsTypeTable.Add(new PetTypes()
            {
                Id = 2,
-               Name = "Cat",
+               Name = "Cat"
            });
            _petsTypeTable.Add(new PetTypes()
            {
