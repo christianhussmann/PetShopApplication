@@ -19,8 +19,8 @@ namespace HussmannDev.PetShop.WebApi.Controllers
         {
             _insuranceService = insuranceService;
         }
-        
-        
+
+
         [HttpGet("{id}")]
         public ActionResult<Insurance> GetById(int id)
         {
@@ -33,5 +33,18 @@ namespace HussmannDev.PetShop.WebApi.Controllers
                 return StatusCode(500, "call 911");
             }
         }
+
+        [HttpPost]
+            public ActionResult<Insurance> Create([FromBody]Insurance insurance)
+            {
+                try
+                {
+                    return _insuranceService.CreateInsurance(insurance);
+                }
+                catch (Exception e)
+                {
+                    return StatusCode(500, "FUCK CALL MY MOM!");
+                }
+            }
+        }
     }
-}

@@ -15,5 +15,10 @@ namespace HussmannDev.PetShopApp.Domain.Services
             {
                 return _insuranceRepository.GetById(id);
             }
-        }
+
+            public Insurance CreateInsurance(Insurance insurance)
+            {
+                return _insuranceRepository.CreateInsurance(insurance);
+            }
+    }
     }
