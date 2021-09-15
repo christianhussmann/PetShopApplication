@@ -8,6 +8,7 @@ namespace HussmannDev.PetShopApp.SQL.Converters
     public class PetConverter
     {
         private IPetTypeRepository _petTypeRepo = new PetTypeRepository();
+        private IOwnerRepository _petOwnerRepo = new OwnerRepository();
         public PetEntity Convert(Pet pet)
         {
             return new PetEntity()
@@ -32,7 +33,7 @@ namespace HussmannDev.PetShopApp.SQL.Converters
                 Name = petEntity.Name,
                 Price = petEntity.Price,
                 SoldDate = petEntity.SoldDate,
-                Type = _petTypeRepo.ReadById(petEntity.TypeId)
+                Type = _petTypeRepo.ReadById(petEntity.TypeId),
             };
         }
     }
