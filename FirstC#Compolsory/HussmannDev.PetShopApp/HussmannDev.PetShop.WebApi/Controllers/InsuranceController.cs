@@ -46,5 +46,52 @@ namespace HussmannDev.PetShop.WebApi.Controllers
                     return StatusCode(500, "FUCK CALL MY MOM!");
                 }
             }
+            
+        [HttpGet]
+        public ActionResult<List<Insurance>> ReadAll()
+        {
+            try
+            {
+                return Ok(_insuranceService.ReadAll());
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Shit.....Dont ask why it doesn't work....");
+            }
+            
+        }
+        [HttpDelete("{id}")]
+        public ActionResult<Insurance> Delete(int id)
+        {
+            try
+            {
+                return Ok(_insuranceService.RemoveInsurance(id));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Reeeeeeeee");
+            }
+            
+        }
+        
+        [HttpPut("{id}")]
+        public ActionResult<Insurance> Update(int id, [FromBody] Insurance insurance)
+        {
+            try
+            {
+                if (id != insurance.Id)
+                {
+                    return BadRequest("Id in insurance must match param id");
+                }
+                return Ok(_insuranceService.UpdateInsurance(insurance));
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "Fuck this shit im ouuut");
+            }
+            
+        }
+        
+        
         }
     }

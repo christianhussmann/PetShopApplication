@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using HussmannDev.PetShopApp.Core.IServices;
 using HussmannDev.PetShopApp.Core.Models;
 using HussmannDev.PetShopApp.Domain.IRepositories;
@@ -19,6 +20,21 @@ namespace HussmannDev.PetShopApp.Domain.Services
             public Insurance CreateInsurance(Insurance insurance)
             {
                 return _insuranceRepository.CreateInsurance(insurance);
+            }
+
+            public List<Insurance> ReadAll()
+            {
+                return _insuranceRepository.ReadAll();
+            }
+
+            public Insurance RemoveInsurance(int id)
+            {
+                return _insuranceRepository.RemoveInsurance(id);
+            }
+
+            public Insurance UpdateInsurance(Insurance insurance)
+            {
+                return _insuranceRepository.UpdateInsurance(insurance);
             }
     }
     }
