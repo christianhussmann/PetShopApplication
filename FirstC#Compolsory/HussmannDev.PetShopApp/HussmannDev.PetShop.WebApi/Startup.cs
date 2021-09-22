@@ -52,11 +52,11 @@ namespace HussmannDev.PetShop.WebApi
                 });
                 
                 
-            services.AddScoped<IPetRepository, PetRepository>();
-            services.AddScoped<IPetTypeRepository, PetTypeRepository>();
+            //services.AddScoped<IPetRepository, PetRepository>();
+            //services.AddScoped<IPetTypeRepository, PetTypeRepository>();
             services.AddScoped<IPetService, PetService>();
             services.AddScoped<IPetTypeService, PetTypeService>();
-            services.AddScoped<IOwnerRepository, OwnerRepository>();
+            //services.AddScoped<IOwnerRepository, OwnerRepository>();
             services.AddScoped<IOwnerService, OwnerService>();
             services.AddScoped<IInsuranceRepository, InsuranceRepository>();
             services.AddScoped<IInsuranceService, InsuranceService>();
