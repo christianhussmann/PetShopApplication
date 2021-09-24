@@ -17,4 +17,8 @@
       <ProjectReference Include="..\HussmannDev.PetShopApp.SQL\HussmannDev.PetShopApp.SQL.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="DTOs" />
+    </ItemGroup>
+
 </Project>

@@ -12,6 +12,11 @@ namespace HussmannDev.PetShopApp.EFCore
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PetEntity>()
+                .HasOne(pet => pet.Owner)
+                .WithMany()
+                .HasForeignKey(pet => new {pet.OwnerId});
+            
+            modelBuilder.Entity<PetEntity>()
                 .HasOne(petEntity => petEntity.Insurance)
                 .WithMany();
 

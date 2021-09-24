@@ -3,6 +3,7 @@ using System.Linq;
 using HussmannDev.PetShopApp.Core.Models;
 using HussmannDev.PetShopApp.Domain.IRepositories;
 using HussmannDev.PetShopApp.EFCore.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace HussmannDev.PetShopApp.EFCore.Repositories
 {
@@ -88,13 +89,18 @@ namespace HussmannDev.PetShopApp.EFCore.Repositories
         public List<Pet> ReadAllPets()
         {
             return _ctx.Pets
+                .Include(pet => pet.Owner)
                 .Select(pet => new Pet
                 {
                     Name = pet.Name,
                     Price = pet.Price,
                     BirthDate = pet.BirthDate,
                     SoldDate = pet.SoldDate,
-                    Color = pet.Color
+                    Color = pet.Color,
+                    PetOwner = new Owner
+                    {
+                        
+                    }
                 })
                 .ToList();
         }

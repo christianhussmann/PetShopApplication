@@ -15,5 +15,7 @@ namespace HussmannDev.PetShopApp.Core.IServices
         Pet UpdatePet(Pet pet);
         
         List<Pet> ReadAllPets();
+        
+        public List<Pet> GetPetsByType(PetTypes petTypes);
     }
 }

@@ -22,6 +22,7 @@ namespace HussmannDev.PetShopApp.Core.Models
         
         public Owner PetOwner { get; set; }
         
+        public Insurance Insurance { get; set; }
         public override string ToString()
         {
             return $"{Id} - {Name} - {BirthDate} - {SoldDate} - {Color} - {Price} - {Type.Name}";

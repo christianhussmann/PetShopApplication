@@ -14,5 +14,6 @@ namespace HussmannDev.PetShopApp.Domain.IRepositories
         Pet RemovePet(int id);
         
         List<Pet> ReadAllPets();
+        
     }
 }

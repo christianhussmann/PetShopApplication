@@ -85,5 +85,15 @@ namespace HussmannDev.PetShopApp.SQL.Repositories
         {
             return _petsTypeTable;
         }
+
+        public List<PetTypes> GetAllPetTypes()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public PetTypes GetPetType(int id)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

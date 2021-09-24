@@ -33,7 +33,7 @@ namespace HussmannDev.PetShopApp.SQL.Converters
                 Name = petEntity.Name,
                 Price = petEntity.Price,
                 SoldDate = petEntity.SoldDate,
-                Type = _petTypeRepo.ReadById(petEntity.TypeId),
+                Type = _petTypeRepo.GetPetType(petEntity.TypeId),
             };
         }
     }

@@ -38,5 +38,15 @@ namespace HussmannDev.PetShopApp.Domain.Services
         {
             return _petRepository.ReadAllPets();
         }
+
+        public List<Pet> GetPetsByType(PetTypes petTypes)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public List<Pet> SortPetsByPrice(List<Pet> sortList)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

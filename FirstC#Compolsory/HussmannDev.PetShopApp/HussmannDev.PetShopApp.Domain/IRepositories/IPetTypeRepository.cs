@@ -5,8 +5,8 @@ namespace HussmannDev.PetShopApp.Domain.IRepositories
 {
     public interface IPetTypeRepository
     {
-        PetTypes ReadById(int petEntityTypeId);
+        List<PetTypes> GetAllPetTypes();
 
-        List<PetTypes> ReadAllPetTypes();
+        PetTypes GetPetType(int id);
     }
 }

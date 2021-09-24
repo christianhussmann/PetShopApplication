@@ -13,5 +13,10 @@ namespace HussmannDev.PetShopApp.EFCore.Entities
         public int TypeId { get; set; }  
         public int InsuranceId { get; set; }
         public InsuranceEntity Insurance { get; set; }
+        
+        public int OwnerId { get; set; }
+
+        public OwnerEntity Owner { get; set; }
+
     }
 }

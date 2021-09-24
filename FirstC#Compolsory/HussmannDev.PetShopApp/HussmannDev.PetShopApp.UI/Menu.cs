@@ -99,7 +99,7 @@ namespace HussmannDev.PetShopApp.UI
                 Name = name,
                 Price = price,
                 SoldDate = soldDate,
-                Type = _petTypeRepository.ReadById(type)
+                Type = _petTypeRepository.GetPetType(type)
             });
         }
 
@@ -125,7 +125,7 @@ namespace HussmannDev.PetShopApp.UI
                 Name = name,
                 Price = price,
                 SoldDate = soldDate,
-                Type = _petTypeRepository.ReadById(type)
+                Type = _petTypeRepository.GetPetType(type)
             });
         }
 
@@ -201,7 +201,7 @@ namespace HussmannDev.PetShopApp.UI
             PrintPetTypes();
             int typeId = GetMainMenuSelection();
             Print(StringConstants.Lines);
-            Print($"Showing all pets of type {_petTypeRepository.ReadById(typeId).Name}");
+            Print($"Showing all pets of type {_petTypeRepository.GetPetType(typeId).Name}");
             foreach (var pet in _petService.ReadAllPets())
             {
                 if (pet.Type.Id == typeId)
@@ -240,7 +240,7 @@ namespace HussmannDev.PetShopApp.UI
         
         private void PrintPetTypes()
         {
-            foreach (var petType in _petTypeRepository.ReadAllPetTypes())
+            foreach (var petType in _petTypeRepository.GetAllPetTypes())
             {
                 Print($"Id: {petType.Id} - {petType.Name}");
             }
